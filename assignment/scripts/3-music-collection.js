@@ -4,6 +4,41 @@ console.log('***** Music Collection *****')
 
 myCollection = [];
 
+/*
+  {
+    artist: 'Snoop Dogg',
+    title: 'The Doggfather',
+    yearPublished: 1996,
+  },
+  {
+    artist: 'Snoop Dogg',
+    title: 'The Last Meal',
+    yearPublished: 2000,
+  },
+  {
+    artist: 'Snoop Dogg',
+    title: 'No Limit Top Dogg',
+    yearPublished: 1999,
+  },
+  {
+    artist: '50 Cent',
+    title: 'Get Rich or Die Tryin'',
+    yearPublished: 2003,
+  },
+  {
+    artist: '50 Cent',
+    title: 'The Massacre'',
+    yearPublished: 2005,
+  },
+  {
+    artist: 'Nas',
+    title: 'Gods Son',
+    yearPublished: 2002,
+  },
+];
+
+*/
+
 function addToCollection(collection, title1, artist1, yearPublished1) {
 
 
@@ -16,14 +51,24 @@ function addToCollection(collection, title1, artist1, yearPublished1) {
   collection.push(newObject);
 
   //console.log(album);
- console.log(collection);
+ //console.log(collection);
  return newObject;
 
 
 
 }
 
-//addToCollection("FirstAlbum", 'Snoop', 'Dogg', 2000);
+addToCollection(myCollection, 'Snoop Dogg', 'The Doggfather', 1996);
+addToCollection(myCollection, 'Snoop Dogg', 'The Last Meal', 2000);
+addToCollection(myCollection, 'Snoop Dogg', 'No Limit Top Dogg', 1999);
+addToCollection(myCollection, '50 Cent', 'Get Rich or Die Tryin', 2003);
+addToCollection(myCollection, '50 Cent', 'The Massacre', 2005);
+addToCollection(myCollection, 'Nas', 'Gods Son', 2002);
+
+console.log(this.myCollection);
+
+
+//Testing function
 
 
 
