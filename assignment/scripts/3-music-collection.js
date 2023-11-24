@@ -8,21 +8,22 @@ function addToCollection(collection, title1, artist1, yearPublished1) {
 
 
   let newObject = {
-    title: title1,
     artist: artist1,
-    yearPublished: yearPublished1
+    title: title1,
+    yearPublished: yearPublished1,
   };
   
-  myCollection.push(newObject);
+  collection.push(newObject);
 
- // console.log(newObject);
- // console.log(myCollection);
+  //console.log(album);
+ console.log(collection);
+ return newObject;
+
 
 
 }
 
-
-addToCollection("FirstAlbum", 'Snoop', 'Dogg', 2000);
+//addToCollection("FirstAlbum", 'Snoop', 'Dogg', 2000);
 
 
 
