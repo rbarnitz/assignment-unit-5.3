@@ -68,11 +68,22 @@ addToCollection(myCollection, 'Nas', 'Gods Son', 2002);
 console.log(this.myCollection);
 
 
-//Testing function
+function showCollection(collection) {
+  for (album of collection) {    
+  
+    let collectionString = '';
 
+    //console.log(album.artist,'by',album.title,', published in', yearString);
+    
+    collectionString = `${album.artist} by ${album.title}, published in ${album.yearPublished.toString()}`;
 
+    console.log(collectionString);
 
+  }
 
+}
+
+showCollection(this.myCollection);
 
 
 
