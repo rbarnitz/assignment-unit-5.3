@@ -39,7 +39,7 @@ myCollection = [];
 
 */
 
-function addToCollection(collection, title1, artist1, yearPublished1) {
+function addToCollection(collection, artist1, title1, yearPublished1) {
 
 
   let newObject = {
@@ -50,7 +50,6 @@ function addToCollection(collection, title1, artist1, yearPublished1) {
   
   collection.push(newObject);
 
-  //console.log(album);
  //console.log(collection);
  return newObject;
 
@@ -65,7 +64,7 @@ addToCollection(myCollection, '50 Cent', 'Get Rich or Die Tryin', 2003);
 addToCollection(myCollection, '50 Cent', 'The Massacre', 2005);
 addToCollection(myCollection, 'Nas', 'Gods Son', 2002);
 
-console.log(this.myCollection);
+//console.log(this.myCollection);
 
 
 function showCollection(collection) {
@@ -78,14 +77,80 @@ function showCollection(collection) {
     collectionString = `${album.artist} by ${album.title}, published in ${album.yearPublished.toString()}`;
 
     console.log(collectionString);
-
   }
 
 }
 
+
+
 showCollection(this.myCollection);
 
+function findByArtist(collection, artist1){
 
+  let matchArray = [];
+  let emptyArray = [];
+
+  for (item of collection) {
+   if (item.artist == artist1){
+      console.log("its a match");
+      console.log(item.title);
+      matchArray.push(item);
+    }
+   else{
+      //console.log('No luck');
+    }
+  }
+ 
+ 
+        if(matchArray.length === 0 ) {
+      console.log('No Matches');
+      console.log(emptyArray);
+        }
+        else{
+          console.log(matchArray);
+        return matchArray;
+        }
+
+}
+
+
+findByArtist(myCollection, 'Snoop Dogg')
+findByArtist(myCollection, 'Hank Williams')
+
+let searchObject = {
+  artist: 'Snoop Dogg', 
+  year: 1957
+}
+
+
+console.log(this.myCollection);
+
+
+//Stretch Goal
+
+function search(collection, searchCriteria){
+  let MatchArray = [];
+  for (items of collection){
+    console.log(searchCriteria.artist);
+    console.log(items.artist);
+
+    if (searchCriteria.artist == items.artist || searchCriteria.year === items.year){
+        console.log('search works!')
+        MatchArray.push(item);
+
+    }
+    else {
+
+    }
+
+     }
+
+console.log(MatchArray);
+return MatchArray;
+
+}
+
+search(myCollection, searchObject)
 
 
 
@@ -106,3 +171,7 @@ try {
 } catch (e) {
   // Do nothing
 }
+
+
+
+

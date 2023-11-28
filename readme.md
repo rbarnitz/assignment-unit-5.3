@@ -91,4 +91,4 @@ Update the `3-music-collection.js` file to do the following:
 
 
 ## Assignment Submission
-Check in your repo, then turn in your work via the Prime Academy Assignment Application at http://primeacademy.io, as usual and don't hesitate to hit up the Slack channel as needed!
+Check in your repo, then turn in your work via the Prime Academy Assignment Application at http://primeacademy.io, as usual and  don't hesitate to hit up the Slack channel as needed
